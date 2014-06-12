@@ -39,6 +39,7 @@
             }
         },
         "components": {
+            "title": "Components",
             "description": "List of components for this page",
             "type": "array",
             "items": {
