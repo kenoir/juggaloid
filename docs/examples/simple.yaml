@@ -1,0 +1,21 @@
+page:
+  template: 'config/templates/layout.mustache'
+  meta:
+    title: 'Default Title'
+    keywords: 'foo bar'
+    description: 'just some page you know'
+
+components:
+    - presenter: 'local://locally_rendered_component'
+      page_location:  'page_head'
+      fail_page_load: yes
+      opts:
+        template:  'app_name:/component.mustache'
+        key: 'value'
+
+    - presenter: 'remote://host/path'
+      page_location:  'page_head'
+      fail_page_load: no
+      opts:
+        key: 'value'
+        
